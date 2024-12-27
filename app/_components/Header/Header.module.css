@@ -1,0 +1,30 @@
+.site_header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    padding: 20px;
+    background-color: cadetblue;
+    color: rgb(254, 152, 152);
+
+    text-align: center;
+}
+
+.site_nav ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.font_helvetica { 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-left: 8px;
+    
+}

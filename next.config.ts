@@ -1,7 +1,21 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  webpack(config, { isServer }) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgo: false,
+          },
+        },
+      ],
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;
