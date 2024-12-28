@@ -51,7 +51,7 @@ export default function Component(props: NavbarProps) {
         <div className="rounded-full bg-foreground text-background">
           <CustomIcon />
         </div>
-        <span className={styles.font_helvetica}>Laércio's Store</span>
+        <span className={styles.font_helvetica}>Laércio&apos;s Store</span>
       </NavbarBrand>
 
       {/* Center Content */}
