@@ -1,0 +1,74 @@
+[
+    {
+        "title":"HTML",
+        "image":"",
+        "description":"O esqueleto! Amei conhecer o básico de cada elemento da melhor forma possível.\nSaber que cada um desempenha um papel semântico para a leitura do SEO foi uma grande descoberta.",
+        "rating":"5"
+    },
+    {
+        "title":"CSS",
+        "image":"",
+        "description":"O corpo! Via e achava muito complicado e extenso. Mas depois de praticar por muito tempo vi que cada propriedade desempanha um papel importantíssimo para que o ceu seja o limite da estilização.",
+        "rating":"5"
+    },
+    {
+        "title":"JavaScript",
+        "image":"",
+        "description":"O cérebro! Manipular o DOM foi um desafio que valeu a pena. Nessa fase aprendi que o debug na web é o nosso melhor amigo e também que devemos confirmar que toda a linha de código escrita faça exatamente o necessário sem passarmos para outra fase.",
+        "rating":"5"
+    },
+    {
+        "title":"JSON",
+        "image":"",
+        "description":"Salva vidas da leitura e escrita! O seu formato simples me fez ver que os JSON lidam muito bem com qualquer informação e quantidade, facilitando o processamento.",
+        "rating":"5"
+    },
+    {
+        "title":"API RESTful",
+        "image":"",
+        "description":"Ela nunca foi complicada, nós é que somos 😂. Resumindo, é o nosso 'tipo de garçon especial' que nos permite fazer pedidos ao servidor de forma fácil com os métodos HTTP (POST, GET, PUT, DELETE)",
+        "rating":"5"
+    },
+    {
+        "title":"Swagger",
+        "image":"",
+        "description":"Estilista da documentação das API's RESTful (Representational State Transfer 'para não esquecer o significado'). Fui claro o suficiente...",
+        "rating":"5"
+    },
+    {
+        "title":"GitHub",
+        "image":"",
+        "description":"Bruh, se precisas de explicação estás no lugar errado.",
+        "rating":"Infinity"
+    },
+    {
+        "title":"GitHub Pages",
+        "image":"",
+        "description":"Bruh, se precisas de explicação estás no lugar errado.",
+        "rating":"Infinity"
+    },
+    {
+        "title":"Tailwind CSS",
+        "image":"",
+        "description":"Só o próprio nome é pesado 😂. Estilo de vento em sequência, cada bloco de regular css pode ser reduzido a uma linha. (Poderoso)",
+        "rating":"5"
+    },
+    {
+        "title":"React.js",
+        "image":"",
+        "description":"Mds, criador dos componentes que eu reutilizei incansavelmente nesse projeto.",
+        "rating":"5"
+    },
+    {
+        "title":"Next.js",
+        "image":"",
+        "description":"A prova de que tudo valeu apena. Já sou organizado, imagina receber um local ainda mais organizado feito com componentes React que apenas tens que trabalhar por cima para contruir obras de arte. Incrivel!",
+        "rating":"5"
+    },
+    {
+        "title":"Vercel",
+        "image":"",
+        "description":"Deploy king! Não julgem o rating, tudo é muito útil e apenas facilita o processo.",
+        "rating":"5"
+    }
+]

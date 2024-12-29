@@ -13,6 +13,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'custom-hover': 'rgb(143, 178, 255)',
       },
     },
   },
