@@ -19,29 +19,29 @@ export default function page() {
           title="Orientação preciosa"
           user={{
             name: "Duarte Neves",
-            avatar: "https://i.pravatar.cc/150?u=a04258114e29026708c",
+            avatar: "users/duarteNeves.png",
           }}
         />
         <CardReview
           linkedIn='https://www.linkedin.com/in/luciostuderferreira/'
-          content="A dedicação e empenho em ensinar do professor fizeram com que eu saísse rapidamente da minha zona de conforto."
-          createdAt="2024-12-28"
+          content="A dedicação e empenho em ensinar do professor fizeram-me sair rapidamente da minha zona de conforto."
+          createdAt="2024-12-31"
           rating={5}
-          title="Ajuda indispensável"
+          title="Suporte indispensável"
           user={{
             name: "Lúcio Studer",
-            avatar: "https://i.pravatar.cc/150?u=a04258114e29026708b",
+            avatar: "users/lucioStuder.png",
           }}
         />
         <CardReview
           linkedIn='https://www.linkedin.com/in/martimmourao/'
           content="O evento Hands-on do professor me permitiu ter uma visão ampla e clara da utilidade das recentes tecnologias."
-          createdAt="2024-12-28"
+          createdAt="2024-12-29"
           rating={5}
           title="Presença forte"
           user={{
             name: "Martim Mourão",
-            avatar: "https://i.pravatar.cc/150?u=a04258114e29026708c",
+            avatar: "users/martimMourao.png",
           }}
         />
       </div>

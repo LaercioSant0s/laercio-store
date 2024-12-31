@@ -21,6 +21,7 @@ import { cn } from "@nextui-org/react";
 import { CustomIcon } from "./CustomIcon";
 import styles from './Header.module.css'
 
+
 const menuItems = [
   "Home",
   "Produtos",
@@ -76,8 +77,8 @@ export default function Component(props: NavbarProps) {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#" size="sm">
-            Contactos
+          <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#footer" size="sm">
+            Contatos
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -137,8 +138,8 @@ export default function Component(props: NavbarProps) {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#" size="sm">
-            Contactos
+          <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#footer" size="sm">
+            Contatos
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>

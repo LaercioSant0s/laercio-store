@@ -19,7 +19,7 @@
     },
     {
         "title":"JSON",
-        "image":"tecnologiasIcons/json.svg",
+        "image":"tecnologiasIcons/icons8-json-96.svg",
         "description":"Salva vidas da leitura e escrita! O seu formato simples me fez ver que os JSON lidam muito bem com qualquer informação e quantidade, facilitando a manipulação.",
         "rating":"5"
     },
@@ -37,7 +37,7 @@
     },
     {
         "title":"GitHub",
-        "image":"tecnologiasIcons/icons8-github-logo-94.svg",
+        "image":"tecnologiasIcons/icons8-github.svg",
         "description":"Bruh, se precisas de explicação estás no lugar errado.",
         "rating":"Infinity"
     },
