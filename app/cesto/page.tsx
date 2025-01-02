@@ -2,23 +2,28 @@
 
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
+import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from "@nextui-org/react";
 import ProductListItem from "@/app/_components/cardComponent/product-list-item";
 import { ProdutosResposta } from "../_models/produtos";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export default function Page() {
+const Page: React.FC = () => {
   const { data, error, isLoading } = useSWR<ProdutosResposta[], Error>(
     "/api/produtos/",
     fetcher
   );
-  
+
   const [cart, setCart] = useState<string[]>(() => {
-    const cartItemsId = localStorage.getItem("cart");
-    return cartItemsId ? JSON.parse(cartItemsId) : [];
+    if (typeof window !== 'undefined') {
+      const cartItemsId = localStorage.getItem('cart');
+      return cartItemsId ? JSON.parse(cartItemsId) : [];
+    }
+    return [];
   });
-  
+
   const [buyDetails, setBuyDetails] = useState<{
     totalCost?: string;
     reference?: string;
@@ -27,7 +32,9 @@ export default function Page() {
   } | null>(null);
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
   }, [cart]);
 
   const removeItemFromCart = (item: string) => {
@@ -99,7 +106,6 @@ export default function Page() {
               image={produto.image}
               category={produto.category}
             >
-
               <Button
                 fullWidth
                 className="font-medium"
@@ -142,4 +148,6 @@ export default function Page() {
       </div>
     </>
   );
-}
+};
+
+export default Page;
