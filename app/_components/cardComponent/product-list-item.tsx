@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { Button, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import { cn } from "@nextui-org/react";
 
 export type ProductItem = {
@@ -15,7 +13,7 @@ export type ProductItem = {
 export type ProductListItemProps = Omit<React.HTMLAttributes<HTMLDivElement>, "id"> & ProductItem;
 
 const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
-  ({ title, price, image, category, ...props }, ref) => {
+  ({ title, price, image, category, children, ...props }, ref) => {
     return (
       <div
       >
@@ -39,15 +37,7 @@ const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
           <p className="text-small text-default-500">Category: {category}</p>
           <div className="flex items-center gap-2">
           </div>
-          <Button
-            fullWidth
-            className="font-medium"
-            color="primary"
-            radius="lg"
-            variant="solid"
-          >
-            Add to cart
-          </Button>
+          {children /* Adicione os filhos aqui */}
         </div>
       </div>
     );

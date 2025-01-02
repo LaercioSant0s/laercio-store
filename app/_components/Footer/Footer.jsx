@@ -12,6 +12,6 @@ export default function Footer() {
         <div><a href="https://www.instagram.com/laercio.dev/" className="font-bold text-default-800 hover:text-custom-hover transition-all duration-700 tracking-widest">Instagram</a></div>
       </div>
         
-        <p className='text-small mb-5 tracking-widest'>2024 © Laércio Santos</p>
+        <p className='text-small mb-5 tracking-widest'>2025 © Laércio Santos</p>
     </footer>
 }

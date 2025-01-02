@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import tecnologias from '@/app/data/tecnologias.json';
 
 export default function Page() {
@@ -20,5 +21,8 @@ export default function Page() {
         </div>
       ))}
     </div>
+
+    <aside className="text-gray-500 text-justify tracking-wider font-sans m-10">Créditos das imagens: <Link href='https://icons8.com/' className='text-custom-hover underline'>Icons8</Link></aside>
+
   </>
 }

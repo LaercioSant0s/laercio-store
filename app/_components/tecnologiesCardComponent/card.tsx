@@ -3,16 +3,18 @@
 import React from "react";
 import { Button, Card, CardBody } from "@nextui-org/react";
 
+
 export default function CustomCard({ icon, title, description }: { 
   icon: React.ReactNode; 
   title: string; 
   description: string; 
 }) {
+
   return (
     <Card className="w-full max-w-[520px] mx-auto relative">
       {/* Botão superior direito */}
       <Button
-        isIconOnly
+        onClick={ () => }
         className="absolute right-2 top-2 z-20"
         radius="full"
         size="sm"
