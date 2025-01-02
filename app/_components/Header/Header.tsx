@@ -21,14 +21,6 @@ import { cn } from "@nextui-org/react";
 import { CustomIcon } from "./CustomIcon";
 import styles from './Header.module.css'
 
-
-const menuItems = [
-  "Home",
-  "Produtos",
-  "Tecnologias",
-  "Contactos"
-];
-
 export default function Component(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 

@@ -14,7 +14,6 @@ export default function CustomCard({ icon, title, description }: {
     <Card className="w-full max-w-[520px] mx-auto relative">
       {/* Botão superior direito */}
       <Button
-        onClick={ () => }
         className="absolute right-2 top-2 z-20"
         radius="full"
         size="sm"

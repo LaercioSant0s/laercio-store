@@ -1,16 +1,16 @@
 "use client";
 
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import useSWR from "swr";
 import Link from 'next/link'
 import { Button } from "@nextui-org/react";
 import ProductListItem from "@/app/_components/cardComponent/product-list-item";
 import { ProdutosResposta } from "../_models/produtos";
+import Image from 'next/image'
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export default function page() {
+const Page: React.FC = () => {
   const { data, error, isLoading } = useSWR<ProdutosResposta[], Error>(
     "/api/produtos/",
     fetcher
@@ -18,7 +18,7 @@ export default function page() {
 
   const [search, setSearch] = useState("");
 
-  const [filteredData, setFilteredData] = useState<ProdutosResposta[]>([])
+  const [filteredData, setFilteredData] = useState<ProdutosResposta[]>([]);
 
   const [cart, setCart] = useState<string[]>(() => {
     const cartItemsId = localStorage.getItem('cart');
@@ -37,13 +37,10 @@ export default function page() {
     if (data) {
       const newFilteredData = data.filter((product) => {
         return product.title.toLowerCase().includes(search.toLowerCase());
-      })
+      });
       setFilteredData(newFilteredData);
     }
-  }, [search, data])
-
-
-
+  }, [search, data]);
 
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
@@ -57,10 +54,9 @@ export default function page() {
           onChange={(e) => setSearch(e.target.value)}
           className="rounded-md px-5" />
 
-
         <div className="ml-4 mr-2 flex flex-row">
-          <img 
-            src='mainIcons/icons8-cart-50.png'
+          <Image 
+            src='/mainIcons/icons8-cart-50.png'
             alt="Cart Icon" 
             width={25}
             height={25}
@@ -96,4 +92,6 @@ export default function page() {
       </div>
     </>
   );
-}
+};
+
+export default Page;

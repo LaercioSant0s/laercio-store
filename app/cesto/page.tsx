@@ -74,7 +74,7 @@ export default function Page() {
     }).then((response) => {
       setCart([]);
       setBuyDetails(response);
-    }).catch((error) => {
+    }).catch(() => {
       setBuyDetails({ error: "Erro ao comprar. Tente novamente." });
     })
   };

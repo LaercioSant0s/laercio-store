@@ -45,7 +45,7 @@ export default function page() {
           }}
         />
       </div>
-      <p className='text-medium font-sans font-bold mx-10 mb-20 italic tracking-wider'>"Serei eternamente grato pelo conhecimento que adquiri com os professores!"</p>
+      <p className='text-medium font-sans font-bold mx-10 mb-20 italic tracking-wider'>&quot;Serei eternamente grato pelo conhecimento que adquiri com os professores!&quot;</p>
     </>
   );
 }

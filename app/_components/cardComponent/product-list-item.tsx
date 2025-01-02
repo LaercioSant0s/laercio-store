@@ -13,7 +13,7 @@ export type ProductItem = {
 export type ProductListItemProps = Omit<React.HTMLAttributes<HTMLDivElement>, "id"> & ProductItem;
 
 const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
-  ({ title, price, image, category, children, ...props }, ref) => {
+  ({ title, price, image, category, children}) => {
     return (
       <div
       >
