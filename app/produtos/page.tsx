@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
-import Link from 'next/link'
+import Link from 'next/link';
 import { Button } from "@nextui-org/react";
 import ProductListItem from "@/app/_components/cardComponent/product-list-item";
 import { ProdutosResposta } from "../_models/produtos";
-import Image from 'next/image'
+import Image from 'next/image';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -21,12 +21,17 @@ const Page: React.FC = () => {
   const [filteredData, setFilteredData] = useState<ProdutosResposta[]>([]);
 
   const [cart, setCart] = useState<string[]>(() => {
-    const cartItemsId = localStorage.getItem('cart');
-    return cartItemsId ? JSON.parse(cartItemsId) : [];
+    if (typeof window !== 'undefined') {
+      const cartItemsId = localStorage.getItem('cart');
+      return cartItemsId ? JSON.parse(cartItemsId) : [];
+    }
+    return [];
   });
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
   }, [cart]);
 
   const addItemToCart = (item: string) => { 
