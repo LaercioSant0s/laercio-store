@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import useSWR from "swr";
-import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from "@nextui-org/react";
 import ProductListItem from "@/app/_components/cardComponent/product-list-item";
 import { ProdutosResposta } from "../_models/produtos";
