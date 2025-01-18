@@ -64,11 +64,13 @@ export default function Component(props: NavbarProps) {
             Tecnologias
           </Link>
         </NavbarItem>
+        {/*
         <NavbarItem>
           <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="https://laerciosant0s.github.io/" size="sm">
             Laboratórios
           </Link>
         </NavbarItem>
+        */}
         <NavbarItem>
           <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#footer" size="sm">
             Contatos
@@ -130,11 +132,13 @@ export default function Component(props: NavbarProps) {
             Tecnologias
           </Link>
         </NavbarMenuItem>
+        {/*
         <NavbarMenuItem>
           <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="https://laerciosant0s.github.io/" size="sm">
             Laboratórios
           </Link>
         </NavbarMenuItem>
+        */}
         <NavbarMenuItem>
           <Link className="font-bold text-default-500 hover:text-custom-hover transition-all duration-700" href="#footer" size="sm">
             Contatos
