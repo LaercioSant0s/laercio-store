@@ -37,7 +37,8 @@ export default function Component(props: NavbarProps) {
       height="60px"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-    >
+      
+      >
       {/* Left Content */}
       <NavbarBrand>
         <div className="rounded-full bg-foreground text-background">
@@ -82,18 +83,23 @@ export default function Component(props: NavbarProps) {
             Login
           </Button>
           <Button
-            className="bg-foreground font-medium text-background"
-            color="secondary"
-            endContent={<Icon icon="solar:alt-arrow-right-linear" />}
-            radius="full"
-            variant="flat"
+          className="bg-foreground font-medium text-background"
+          color="secondary"
+          endContent={<Icon icon="solar:alt-arrow-right-linear" />}
+          radius="full"
+          variant="flat"
           >
-            Get Started
+          Get Started
           </Button>
-        </NavbarItem>
-      </NavbarContent>
-      */}
+          </NavbarItem>
+          </NavbarContent>
+          */}
 
+      
+      
+      <p className="md:hidden font-sans tracking-wider">
+        {isMenuOpen ? "Fechar Menu" : "Abrir Menu"}
+      </p>
       <NavbarMenuToggle className="text-default-400 md:hidden" />
 
       <NavbarMenu className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50">

@@ -53,6 +53,25 @@ const Page: React.FC = () => {
 
   return (
     <>
+      {/* Cart Icon */}
+      {cart.length !== 0 && (
+      <div className="fixed bottom-4 right-4 z-50 flex items-center space-x-2 bg-white p-2 rounded-full shadow-lg">
+        <Link href="/cesto">
+          <div className="flex items-center space-x-1 cursor-pointer">
+            <Image
+              src="/mainIcons/icons8-cart-50.png"
+              alt="Cart Icon"
+              width={30}
+              height={30}
+            />
+            <span className="text-sm font-semibold text-green-500">
+              {cart.length}
+            </span>
+          </div>
+        </Link>
+      </div>
+      )}
+
       <div className="flex justify-center flex-row">
         <input placeholder="Search by name"
           value={search}

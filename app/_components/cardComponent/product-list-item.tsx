@@ -8,15 +8,15 @@ export type ProductItem = {
   price: string;
   image: string;
   category: string;
+  children?: React.ReactNode;
 };
 
 export type ProductListItemProps = Omit<React.HTMLAttributes<HTMLDivElement>, "id"> & ProductItem;
 
 const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
-  ({ title, price, image, category, children}) => {
+  ({ title, price, image, category, children, ...props }, ref) => {
     return (
-      <div
-      >
+      <div ref={ref} {...props}>
         <div
           className={cn(
             "relative flex h-52 max-h-full w-full flex-col items-center justify-center overflow-visible rounded-medium bg-content2"
